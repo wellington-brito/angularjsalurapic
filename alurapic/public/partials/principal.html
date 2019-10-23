@@ -23,7 +23,7 @@
         <!-- <img class="img-responsive center-block" ng-src="{{foto.url}}" alt="{{foto.titulo}}"> -->
         <minha-foto url={{foto.url}} titulo={{foto.titulo}}></minha-foto>
         <a href="fotos/edit/{{foto._id}}" class="btn btn-primary btn-block">Editar</a> <!-- navegação -->
-        <button ng-click="remover(foto)" class="btn  btn-danger  btn-block">Remover</button> <!-- continuar na mesma página-->
 
+        <meu-botao-perigo acao="remover(foto)" nome="Remover"></meu-botao-perigo>
     </meu-painel>
 </div><!-- fim row -->
