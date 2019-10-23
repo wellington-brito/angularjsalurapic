@@ -13,6 +13,11 @@ angular.module('alurapic', ['minhasDiretivas','ngAnimate','ngRoute'])
         controller: 'FotoController'
     });
 
+    $routeProvider.when('/fotos/edit/:fotoId', {                        // segundo parâmetro objeto javascript
+        templateUrl: 'partials/registrarFoto.html',
+        controller: 'FotoController'
+    });
+
     $routeProvider.otherwise({ redirectTo: '/fotos'});               // ao inserir uma rota inválida ele redirenciona para /fotos   
     
 });
